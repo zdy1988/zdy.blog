@@ -304,7 +304,7 @@ disqus:
 #hypercomments_id:
 
 # Gentie productKey
-gentie_productKey: ccd49be27ee24aee9de6bea558c98ecd
+# gentie_productKey: #ccd49be27ee24aee9de6bea558c98ecd
 
 # changyan
 changyan:
@@ -318,17 +318,17 @@ changyan:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+livere_uid: MTAyMC8yODE2Ny80NzQw
 
 # Baidu Share
 # Available value:
 #    button | slide
 # Warning: Baidu Share does not support https.
-#baidushare:
+# baidushare: true
 ##  type: button
 
 # Share
-#jiathis:
+# jiathis: true
 # Warning: JiaThis does not support https.
 #add_this_id:
 
@@ -418,10 +418,10 @@ busuanzi_count:
 
 
 # Tencent analytics ID
-# tencent_analytics:
+# tencent_analytics: 61647869
 
 # Tencent MTA ID
-# tencent_mta:
+# tencent_mta: 500433335
 
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
