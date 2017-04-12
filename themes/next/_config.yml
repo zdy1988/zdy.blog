@@ -6,12 +6,12 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "zdy,zhu,张大爷,蛀,Hexo, NexT"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: /atom.xml #rss地址
 
 # Specify the date when the site was setup
 since: 2017
@@ -71,6 +71,11 @@ menu_icons:
   sitemap: sitemap
   commonweal: heartbeat
 
+# hexo sitemap网站地图
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
 
 
 
