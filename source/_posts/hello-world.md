@@ -1,12 +1,12 @@
----
+﻿---
 title: Hello World
-categories: 
-- test1
-- test2
-tags:
-- PS3
-- Games
+date: 2017-04-10 00:00:00
+categories:
+- 文章
+comments: false
 ---
+![hello hexo](/images/hello.jpg)
+
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
 ## Quick Start
@@ -16,6 +16,7 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 ``` bash
 $ hexo new "My New Post"
 ```
+<!-- more -->
 
 More info: [Writing](https://hexo.io/docs/writing.html)
 

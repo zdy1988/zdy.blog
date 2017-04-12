@@ -1,1 +1,25 @@
 // Custom styles.
+
+//修改文章内链接文本样式
+.post-body p a {
+	color: #0593d3;
+	border-bottom: none;
+	&:hover {
+		color: #0477ab;
+		text-decoration: underline;
+	}
+}
+//修改不在文章内的链接文本样式
+.link-blue{
+	color: #f36;
+	&:hover {
+		color: #f00;
+	}
+}
+//修改文章内code样式
+code {color:#fff;background:#333;}
+
+//修改文章中图片样式，改为居中
+.posts-expand .post-body img {
+	margin: 0 auto;
+}

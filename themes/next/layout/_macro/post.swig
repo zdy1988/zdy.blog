@@ -330,6 +330,12 @@
       {% endif %}
     </div>
 
+    <div>
+      {% if not is_index %}
+        {% include 'passage-end-tag.swig' %}
+      {% endif %}
+    </div>
+
     <footer class="post-footer">
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">
@@ -353,13 +359,13 @@
                 <div class="fb-like" data-layout="button_count" data-share="true"></div>
               </div>
             {% endif %}
-            
+
             {% if theme.leancloud_visitors.enable %}
 		  	 <span id="{{ url_for(post.path) }}"class="leancloud_visitors"  data-flag-title="{{ post.title }}">
             &nbsp; | &nbsp; {{__('post.visitors')}}
             </span>
 		  {% endif %}
-            
+
           </div>
         {% endif %}
       {% endif %}
