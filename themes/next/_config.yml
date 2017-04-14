@@ -47,7 +47,7 @@ alipay: /uploads/alipay.jpg
 menu:
   home: /
   archives: /archives
-  categories: /categories
+  #categories: /categories
   tags: /tags
   about: /about
   #sitemap: /sitemap.xml
