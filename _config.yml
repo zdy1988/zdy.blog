@@ -78,8 +78,3 @@ deploy:
   type: git
   repo: https://github.com/zdy1988/zdy1988.github.io.git
   branch: master
-
-# PostLink
-addlink:
-  before_text: 本文地址： # text before the post link
-  after_text:  # text after the post link
