@@ -1,9 +1,12 @@
 {% macro render(post, is_index, post_extra_class) %}
 
-  {% set headlessPost = Array.prototype.indexOf.call(['quote', 'picture'], post.type) > -1 %}
+  {% set headlessPost = Array.prototype.indexOf.call(['quote'], post.type) > -1 %}
 
   {% set post_class = 'post post-type-' + post.type | default('normal') %}
   {% set post_class = post_class + ' ' + post_extra_class | default('') %}
+  {% if is_index %}
+    {% set post_class = post_class + ' ' + 'post-index' %}
+  {% endif %}
   {% if post.sticky > 0 %}
     {% set post_class = post_class + ' ' + 'post-sticky' %}
   {% endif %}
@@ -303,6 +306,13 @@
         {% else %}
           {% if post.type === 'picture' %}
             <a href="{{ url_for(post.path) }}">{{ post.content }}</a>
+            <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#{{ __('post.more') }}{% endif %}" rel="contents">
+              {{ __('post.read_more') }} &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
           {% else %}
             {{ post.content }}
           {% endif %}
@@ -396,6 +406,7 @@
       {% if is_index and not isLast %}
         <div class="post-eof"></div>
       {% endif %}
+      
     </footer>
   </article>
 

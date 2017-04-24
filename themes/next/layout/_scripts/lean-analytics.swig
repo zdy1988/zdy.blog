@@ -10,14 +10,12 @@
   query.find({
   success: function(results) {
   if (results.length == 0) {
-  var content = $(document.getElementById(url)).text() + ': 0';
-  $(document.getElementById(url)).text(content);
+  $(document.getElementById(url)).find('.leancloud-visitors-count').text(0);
   return;
   }
   for (var i = 0; i < results.length; i++) {
-					var object = results[i];
-					var content = $(document.getElementById(url)).text() + ': ' + object.get('time');
-					$(document.getElementById(url)).text(content);
+					var count = results[i].get('time');
+					$(document.getElementById(url)).find('.leancloud-visitors-count').text(count);
 				}
 			},
 			error: function(object, error) {
@@ -40,8 +38,8 @@ function addCount(Counter) {
 				counter.increment("time");
 				counter.save(null, {
 					success: function(counter) {
-						var content = $(document.getElementById(url)).text() + ': ' + counter.get('time');
-						$(document.getElementById(url)).text(content);
+						var count = counter.get('time');
+						$(document.getElementById(url)).find('.leancloud-visitors-count').text(count);
 					},
 					error: function(counter, error) {
 						console.log('Failed to save Visitor num, with error message: ' + error.message);
@@ -55,8 +53,8 @@ function addCount(Counter) {
 				newcounter.save(null, {
 					success: function(newcounter) {
 					    console.log("newcounter.get('time')="+newcounter.get('time'));
-						var content = $(document.getElementById(url)).text() + ': ' + newcounter.get('time');
-						$(document.getElementById(url)).text(content);
+						var newcount = newcounter.get('time');
+						$(document.getElementById(url)).find('.leancloud-visitors-count').text(newcount);
 					},
 					error: function(newcounter, error) {
 						console.log('Failed to create');

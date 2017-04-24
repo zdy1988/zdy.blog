@@ -1,7 +1,7 @@
 {#
 Custom head.
 #}
-<meta name="baidu-site-verification" content="pVoxVW6Wg9" />
+<meta name="baidu-site-verification" content="2dNEJos9cR" />
 <script>
 (function(){
     var bp = document.createElement('script');

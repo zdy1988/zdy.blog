@@ -12,7 +12,9 @@
         {% else %}
             <a class="post-title-link" href="{{ url_for(post.path) }}" itemprop="url">
               {% if post.type === 'picture' %}
-                {{ post.content }}
+                <span itemprop="name">{{ post.title | default(__('post.untitled')) }}</span>
+                {% set content = post.content %}
+                {{ content.substring(0,content.indexOf('<a id="more"></a>')) }}
               {% else %}
                 <span itemprop="name">{{ post.title | default(__('post.untitled')) }}</span>
               {% endif %}
