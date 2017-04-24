@@ -8,7 +8,7 @@ tags:
 categories:
 - 随笔
 ---
-![how-many-detours-to-go](/images/how-many-detours-to-go/1.jpg)
+![how-many-detours-to-go](/images/how-many-detours-to-go.jpg)
 
 2016年12月30日下午16：58分，我从公司出来，站在车水马龙的大街，我突然觉得很难过。你那么文艺，为什么还是没有爱人？你那么有才，为什么还在这里工作？我抬头仰望天空，听说45度角仰望天空，眼泪就不会流下来。我想，天空那么大，一定可以包容我所有的委屈...
 <!-- more -->
