@@ -24,20 +24,20 @@ hexo.extend.console.register('photos', 'Generate your photos page', function (ar
                     return;
                 }
                 if (stats.isFile()) {
-                    if (getExtension(fileName) !== 'json') {
+                    var ext = getExtension(fileName);
+                    if (ext !== 'json' && ext !== 'html') {
                         var photos = [];
-                        photos.push({ name: fileName, path: realFilePath });
-                        json.push({ name: fileName, cover: realFilePath, ctime: stats.ctime, photos: photos })
+                        photos.push({ name: fileName, path: realFilePath.replace('source', '') });
+                        json.push({ name: fileName, cover: realFilePath.replace('source', ''), ctime: stats.ctime, photos: photos })
                     }
                 } else if (stats.isDirectory()) {
                     var files2 = fs.readdirSync(realFilePath);
                     if (files2.length > 0) {
                         var photos = [];
-                        for (var i = 0; i < files2.length; i++)
-                        {
-                            photos.push({ name: fileName, path: path.join(realFilePath, files2[i]) });
+                        for (var i = 0; i < files2.length; i++) {
+                            photos.push({ name: fileName, path: path.join(realFilePath.replace('source', ''), files2[i]) });
                         }
-                        json.push({ name: fileName, cover: path.join(realFilePath, files2[0]), ctime: stats.ctime, photos: photos })
+                        json.push({ name: fileName, cover: path.join(realFilePath.replace('source', ''), files2[0]), ctime: stats.ctime, photos: photos })
                     }
                 }
                 iterator(index + 1);
