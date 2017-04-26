@@ -49,9 +49,11 @@ menu:
   archives: /archives
   #categories: /categories
   tags: /tags
+  photos: /categories/摄影/
   about: /about
   #sitemap: /sitemap.xml
   #commonweal: /404.html
+
 
 
 # Enable/Disable menu icons.
@@ -66,10 +68,12 @@ menu_icons:
   about: user
   categories: th
   schedule: calendar
+  photos: camera-retro
   tags: tags
   archives: archive
   sitemap: sitemap
   commonweal: heartbeat
+
 
 # hexo sitemap网站地图
 sitemap:
