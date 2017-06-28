@@ -3,11 +3,12 @@
 NexT.utils = NexT.$u = {
   /**
    * Wrap images with fancybox support.
-   */
-  wrapImageWithFancyBox: function () {
-    $('.content img')
+   *    $('.content img')
       .not('[hidden]')
       .not('.group-picture img, .post-gallery img')
+   */
+  wrapImageWithFancyBox: function () {
+    $('.post-body img')
       .each(function () {
         var $image = $(this);
         var imageTitle = $image.attr('title');
@@ -29,6 +30,10 @@ NexT.utils = NexT.$u = {
       });
 
     $('.fancybox').fancybox({
+      padding : 0,
+      nextEffect : 'fade',
+      prevEffect : 'fade',
+      mouseWheel: true,
       helpers: {
         overlay: {
           locked: false

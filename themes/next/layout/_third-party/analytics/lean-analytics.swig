@@ -28,8 +28,9 @@
             var url = item.get('url');
             var time = item.get('time');
             var element = document.getElementById(url);
-
+            if(time != 1) {
             $(element).find(COUNT_CONTAINER_REF).text(time);
+            }
           }
           for(var i = 0; i < entries.length; i++) {
             var url = entries[i];
