@@ -8,7 +8,7 @@ NexT.utils = NexT.$u = {
       .not('.group-picture img, .post-gallery img')
    */
   wrapImageWithFancyBox: function () {
-    $('.post-body img')
+    $('.post-body img,.iw_wrapper img')
       .each(function () {
         var $image = $(this);
         var imageTitle = $image.attr('title');
