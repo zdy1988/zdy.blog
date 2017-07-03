@@ -16,3 +16,9 @@ Custom head.
     s.parentNode.insertBefore(bp, s);
 })();
 </script>
+
+<!-- Apple Touch Icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./apple-touch-icon/144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="./apple-touch-icon/114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./apple-touch-icon/72x72.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="./apple-touch-icon/57x57.png">
