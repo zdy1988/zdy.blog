@@ -1,14 +1,12 @@
 ---
-title: 中国式宗教
+title: 洗脑
 date: 2017-07-03 01:27:56
 tags: 
-- 中国
-- 宗教
 - 感想
 categories:
 - 随笔
 ---
-![how-to-made-a-chinese-style-religion](/images/how-to-made-a-chinese-style-religion.jpg)
+![mind-contorl](/images/mind-contorl.JPG)
 
 最近，作为公司的核心员工，我参加了公司组织的企业培训课程。
 <!-- more -->
