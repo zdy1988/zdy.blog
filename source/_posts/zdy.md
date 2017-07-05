@@ -1,6 +1,10 @@
 ---
-date: 2017-04-10 22:05:13
-type: "about"
+title: 張大爺
+date: 2017-07-05 22:45:39
+tags:
+- 張大爺
+categories:
+- 文章
 ---
 ![zdy](/images/zdy.jpg)
 
