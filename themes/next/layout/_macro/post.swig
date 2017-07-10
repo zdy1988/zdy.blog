@@ -305,7 +305,7 @@
           <!--/noindex-->
         {% else %}
           {% if post.type === 'picture' %}
-            <a href="{{ url_for(post.path) }}">{{ post.content }}</a>
+            <a href="{{ url_for(post.path) }}" data-id="{{ post.id }}">{{ post.content }}</a>
             <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#{{ __('post.more') }}{% endif %}" rel="contents">

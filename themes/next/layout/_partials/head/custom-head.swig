@@ -17,6 +17,22 @@ Custom head.
 })();
 </script>
 
+<!-- uc强制竖屏 -->
+<meta name="screen-orientation" content="portrait">
+<!-- QQ强制竖屏 -->
+<meta name="x5-orientation" content="portrait">
+<!-- UC强制全屏 -->
+<meta name="full-screen" content="yes">
+<!-- QQ强制全屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- UC应用模式 -->
+<meta name="browsermode" content="application">
+<!-- QQ应用模式 -->
+<meta name="x5-page-mode" content="app">
+<!-- windows phone 点击无高光 -->
+<meta name="msapplication-tap-highlight" content="no">
+<!-- 适应移动端end -->
+
 <!-- Apple Touch Icons -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./apple-touch-icon/144x144.png">
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./apple-touch-icon/114x114.png">

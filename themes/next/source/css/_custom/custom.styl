@@ -1,6 +1,27 @@
-﻿// Custom styles.
+﻿// Fancybox
+.fancybox-overlay {
+    background: black !important;
+}
+
+@media (max-width: 767px)
+{
+	.fancybox-close {
+		display:none;
+	}
+}
+
+// Custom styles.
 .posts-collapse .collection-title h2{
 	    font-weight: normal;
+}
+
+.posts-collapse .post-title{
+	margin-left: 60px;
+	margin-right: 22px;
+}
+
+.posts-collapse .post-title a p {
+	margin: 0;
 }
 //�޸�����������ı���ʽ
 .post-body p a {
@@ -24,6 +45,9 @@ code {color:#fff;background:#333;}
 //�޸�������ͼƬ��ʽ����Ϊ����
 .posts-expand .post-body img {
 	margin: 0 auto;
+	border: 0;
+	padding: 0;
+	width: 100%;
 }
 
 .posts-expand .post-meta{
@@ -37,7 +61,7 @@ code {color:#fff;background:#333;}
 //update index
 
 .post-index .group-picture{
-    border: 1px solid #ddd;
+    margin: -3px;
 }
 
 .post-index .group-picture-container{
@@ -49,8 +73,6 @@ code {color:#fff;background:#333;}
 }
 
 .page-post-detail .post-body .group-picture-column img{
-    padding: 3px;
-    border: 1px solid #ddd;
     margin-bottom: 1.8em;
 }
 
@@ -70,5 +92,25 @@ code {color:#fff;background:#333;}
 {
 	.menu .menu-item a {
 		padding: 6px 10px;
+	}
+
+	.main-inner {
+		margin-top: 140px;
+	}
+
+	.header {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 5000;
+	}
+
+	.header-inner {
+		margin-bottom: 0px;
+	}
+
+	.page-archive .group-picture-row:first-child .group-picture-column{
+		max-width: initial;
+		max-height: initial;
 	}
 }
