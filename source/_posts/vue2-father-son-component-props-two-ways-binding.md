@@ -1,13 +1,9 @@
 ﻿---
-title: Vue2父子组件Props双向绑定实现方式
+title: Vue2.x 父子组件Props双向绑定
 date: 2017-07-07 16:48:57
 tags: 
-- vuejs
 - vue2
-- props
-- 组件
 - component
-- two-ways
 categories:
 - 前端技术
 ---
