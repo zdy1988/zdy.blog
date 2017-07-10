@@ -10,6 +10,12 @@
 	}
 }
 
+// Category page.
+.category-all-page .category-list-item {
+    display: inline-block;
+    margin: 10px;
+}
+
 // Custom styles.
 .posts-collapse .collection-title h2{
 	    font-weight: normal;
@@ -88,8 +94,24 @@ code {color:#fff;background:#333;}
     font-weight: normal;
 }
 
+.site-brand-wrapper{
+	float:left;
+}
+
 @media (max-width: 767px)
 {
+	.site-brand-wrapper{
+		float:none;
+	}
+
+	.site-nav{
+		margin: 10px -10px;
+	}
+
+	.menu{
+		margin: 10px 0 0 0;
+	}
+
 	.menu .menu-item a {
 		padding: 6px 10px;
 	}

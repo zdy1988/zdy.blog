@@ -17,28 +17,19 @@ NexT.utils = NexT.$u = {
         if ($imageWrapLink.size() < 1) {
           $imageWrapLink = $image.wrap('<a href="' + this.getAttribute('src') + '"></a>').parent('a');
         }
-
-        $imageWrapLink.addClass('fancybox fancybox.image');
-        $imageWrapLink.attr('rel', 'group');
+        var $postBody = $(this).closest('div.post-body')
+        var gallery = $postBody ? $postBody.attr('data-gallery') : 'gallery'
+        $imageWrapLink.addClass('fancybox');
+        $imageWrapLink.attr('data-fancybox', gallery);
 
         if (imageTitle) {
-          $imageWrapLink.append('<p class="image-caption">' + imageTitle + '</p>');
-
-          //make sure img title tag will show correctly in fancybox
           $imageWrapLink.attr('title', imageTitle);
         }
       });
 
     $('.fancybox').fancybox({
-      padding : 0,
-      nextEffect : 'fade',
-      prevEffect : 'fade',
-      mouseWheel: true,
-      helpers: {
-        overlay: {
-          locked: false
-        }
-      }
+        protect: true,
+        caption: $(this).attr('title')
     });
   },
 

@@ -30,6 +30,7 @@
       <span class="btn-bar"></span>
     </button>
   </div>
+  <div style="clear: both;"></div>
 </div>
 
 <nav class="site-nav">

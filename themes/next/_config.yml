@@ -29,7 +29,7 @@ copyright: true
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: false
+seo: true
 
 # 文章末尾添加“本文结束”标记
 passage_end_tag:
@@ -47,7 +47,7 @@ alipay: /uploads/alipay.jpg
 menu:
   home: /
   archives: /archives
-  #categories: /categories
+  categories: /categories
   tags: /tags
   photos: /photos
   about: /about
@@ -152,7 +152,7 @@ font:
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
   GitHub: https://github.com/zdy1988
-  Mail: virus_zhh@126.com
+  Mail: mailto:virus_zhh@126.com
 
 
 # Social Links Icons
