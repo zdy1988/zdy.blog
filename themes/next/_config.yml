@@ -31,10 +31,6 @@ canonical: true
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
 seo: true
 
-# 文章末尾添加“本文结束”标记
-passage_end_tag:
-  enabled: true
-
 # 文章末尾显示打赏按钮
 wechatpay: /uploads/wechatpay.jpg
 alipay: /uploads/alipay.jpg
@@ -111,32 +107,32 @@ font:
   global:
     # external: true will load this font family from host.
     external: true
-    family: Lato
+    family: Monda
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
   # Fallback to `global` font settings.
   headings:
     external: true
-    family:
+    family: 'Roboto Slab'
 
   # Font settings for posts
   # Fallback to `global` font settings.
   posts:
     external: true
-    family:
+    family: 'Monda'
 
   # Font settings for Logo
   # Fallback to `global` font settings.
   # The `size` option use `px` as unit
   logo:
     external: true
-    family:
+    family: 'Rosario'
     size:
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
+    family: 'PT Mono'
     size:
 
 
@@ -266,7 +262,7 @@ post_wordcount:
 
 # Declare license on posts
 post_copyright:
-  enable: false
+  enable: true
   license: CC BY-NC-SA 3.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
 

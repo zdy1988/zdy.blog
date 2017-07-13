@@ -1,4 +1,5 @@
-{% if theme.post_copyright.enable %}
+﻿{% if theme.post_copyright.enable %}
+  <div style="text-align:center;color: #ccc;font-size:14px;">------ 本文结束 ------</div>
   <ul class="post-copyright">
     <li class="post-copyright-author">
       <strong>{{ __('post.copyright.author') + __('symbol.colon') }}</strong>
