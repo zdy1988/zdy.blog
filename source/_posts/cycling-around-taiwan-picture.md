@@ -42,7 +42,6 @@ categories:
 ![](/photos/taiwan/DSC2679.jpg)
 ![](/photos/taiwan/DSC2686.jpg)
 ![](/photos/taiwan/DSC2689.jpg)
-![](/photos/taiwan/DSC2696.jpg)
 ![](/photos/taiwan/DSC2700.jpg)
 ![](/photos/taiwan/DSC2702.jpg)
 ![](/photos/taiwan/DSC2717.jpg)
