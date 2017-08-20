@@ -73,23 +73,34 @@ categories:
 2.  设置 router/index.js ，将 routerConfig 导出时为了动态生成菜单使用
 
 ```javascript
+
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import routerConfig from './config.json'
 
 Vue.use(VueRouter)
 
-const routers = Object.keys(routerConfig).map(key => {
-  let item = routerConfig[key]
-  if (item.src) {
-    item.component = resolve => require(['@/views/' + item.src], resolve)
-    return item
+const routers = []
+
+function recursionRouters (routerConfig) {
+  for (let item of routerConfig) {
+    if (item.src) {
+      item.meta = Object.assign({}, item)
+      item.component = resolve => require(['@/views/' + item.src], resolve)
+      routers.push(item)
+    } else if (item.children) {
+      recursionRouters(item.children)
+    }
   }
-}).filter(item => item !== undefined)
+}
+
+recursionRouters(routerConfig)
 
 var router = new VueRouter({
   routes: [
     {path: '/', component: resolve => require(['@/views/index'], resolve)},
+    {path: '/login', component: resolve => require(['@/views/index'], resolve)},
+    {path: '/lock', component: resolve => require(['@/views/lock'], resolve)},
     {
       path: '/main',
       component: resolve => require(['@/views/main'], resolve),
@@ -101,7 +112,8 @@ var router = new VueRouter({
 export default router
 
 export {
-  routerConfig
+  routerConfig,
+  routers
 }
 
 ```
