@@ -13,6 +13,8 @@ categories:
 
 1.  在 router 文件夹下新建一个 config.json 文件，来作为 router 的数据源
 
+<!-- more -->
+
 ``` javascript
 [
   {
@@ -69,7 +71,7 @@ categories:
     ]
   }
 ```
-<!-- more -->
+
 2.  设置 router/index.js ，将 routerConfig 导出时为了动态生成菜单使用
 
 ```javascript
